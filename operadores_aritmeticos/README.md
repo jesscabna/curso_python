@@ -8,13 +8,13 @@ Los operadores aritméticos o arithmetic operators son los más comunes que nos 
 #operador  + 
 El operador + suma los números presentes a la izquierda y derecha del operador. 
 >ejemplo:
-'''phyton 
+```phyton 
 
 Num_1=10
 Num_2=10
 Operando=Num_1+Num_2
 print(Operando) 
-'''
+```
 
 #operador - 
 El operador - resta los números presentes a la izquierda y derecha del operador. A diferencia el operador + en este caso no podemos restar cadenas o listas.
