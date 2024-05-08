@@ -12,11 +12,11 @@ if edad > 18 :
 ## escribir un programa que almacene la cadena de caracteres contraseña en una variable , y pregunte al usuaRIO  por contraseña e imprima por pantalla si la contraseña introducida por el usuario coincide con la guardada en la variable sin tener en cuenta mayusculas .
 
 contra:str=(input("ingrese contraseña pliss :"))
-contraseña="Jesuscab"
-if contraseña == contra :
-    print("contraseña correcta ")
+contraseña ="jessJESSjessJESS"
+if  contraseña == contra :
+    print("contraseña coincide ")
 else :
-    print("contraseña incorrecta")    
+    print("contraseña no coincide ")    
 
 ## ejercicio 3 :
 ## escribir un programa que pida al usuario un numero entero positivo y muestre por pantalla la cuenta atras desde ese numero hasta cero separados por comas
