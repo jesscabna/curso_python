@@ -24,7 +24,7 @@ Print(Texto)
 #Variables booleanas.
 Una variable booleana es una variable que sólo puede tomar dos posibles valores: True (verdadero) o False (falso). 
 >ejemplo:
-'''phyton 
+```python
  1 == 1
     True
  1 == 1.0
