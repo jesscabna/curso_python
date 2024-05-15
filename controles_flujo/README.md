@@ -46,5 +46,5 @@ respuesta="eres mayor de edad" if edad_dos>=18 else "eres menor"
  ```python
  for n in range(1,11)
     print(n)
-
-##     
+```
+##el enumerate consume mas memoria ... sirve para oraciones largas ( ejecuta mas rapido) y (demora en oraciones pequeñas es mas lento).
