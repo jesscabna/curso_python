@@ -74,3 +74,4 @@
 variable="a"
 for i in range(variable,1):
     print(variable,i)
+##  for
