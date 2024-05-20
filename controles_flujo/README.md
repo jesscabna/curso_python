@@ -48,3 +48,24 @@ respuesta="eres mayor de edad" if edad_dos>=18 else "eres menor"
     print(n)
 ```
 ##el enumerate consume mas memoria ... sirve para oraciones largas ( ejecuta mas rapido) y (demora en oraciones pequeñas es mas lento).
+
+### while
+es un mecanismo que usa `python` para repetir instrucciones ,de esta sentencia es : `mientras se cumpla la condicion has algo `
+
+```python
+condicion =True
+while condicion :
+   eval=input("desea continuar[S/N]:")
+   if eval == "S":
+      print("CONTINUAS EN EL BUCLE ")
+      continue
+   else : 
+      print("se termino el programa ")
+      condicion=False
+      break
+```   
+while termina con la intervencion de terceros mientras que for tiene un rango como tambien se usa para recorrer listaas.
+< la funcion `upper` siempre convierte la minuscula en  mayuscula
+< la funcion `lower` en minuscula.
+
+

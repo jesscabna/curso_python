@@ -71,7 +71,8 @@
 
 
  ## haciendo uso de for crear un programa   que muestre por terminal la sigiente figura 
-variable="a"
-for i in range(variable,1):
-    print(variable,i)
+#variable="a"
+#for i in range(variable,1):
+  #  print(variable,i)
 ##  for
+

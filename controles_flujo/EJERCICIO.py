@@ -24,3 +24,5 @@ else :
 numero=int(input("ingrese numero pliss:"))
 for i in range(numero,-1,-1):
     print(i , end=",")
+
+    
