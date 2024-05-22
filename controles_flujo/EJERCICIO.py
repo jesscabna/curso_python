@@ -21,8 +21,10 @@ else :
 ## ejercicio 3 :
 ## escribir un programa que pida al usuario un numero entero positivo y muestre por pantalla la cuenta atras desde ese numero hasta cero separados por comas
 
-numero=int(input("ingrese numero pliss:"))
-for i in range(numero,-1,-1):
-    print(i , end=",")
+#numero=int(input("ingrese numero pliss:"))
+#for i in range(numero,-1,-1):
+ #   print(i , end=",")
 
-    
+## ejercicio 
+
+

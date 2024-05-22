@@ -69,3 +69,5 @@ while termina con la intervencion de terceros mientras que for tiene un rango co
 < la funcion `lower` en minuscula.
 
 
+
+
