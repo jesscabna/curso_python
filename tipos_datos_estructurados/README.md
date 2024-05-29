@@ -82,10 +82,46 @@ ista-nombres=["edith","ruth","luz"]
 lista_nombres.pop(0)
 
 ```
-### buscar elemento de una lista 
+### 4 buscar elemento de una lista 
 ```python
 lista-nombres=["edith","ruth","luz"]
 lista_nombres.index("ruth")
 print(lista_nombres[indice])
+
+```
+## 5. comparar numeros en una lista 
+```python
+compara=[1,2,3]<[1,2,4]
+#1 no compara porque son los mismos en ambas listas 
+#2 no compara porque son ls mismos en ambas listas 
+#3 si compara ya que es menor que cuatro
+print(compara)
+
+```
+### 6. cuidado las copias
+
+## 7. FE DE ERRATAS (ACTUALIZAR LISTAS )
+```python
+lista=[1,3,4,5,6]
+lista[0]=2
+print(lista)
+#[1,2,3,4,5,6]
+#modificando listas con diccionarios 
+alumnos[
+    {
+        "nombre":"abel"
+        "edad":15
+    },
+    {
+        "nombre":"antoni"
+        "edad":29
+
+    },
+]
+alumno[0]["edad"]=30
+alumnos[0]={"nombre":"mafer","edad":15} 
+alumno[1]["sexo"]="por definir"  
+print(alumno)   
+```
 
 
