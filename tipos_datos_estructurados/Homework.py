@@ -8,41 +8,47 @@
 
 
 #buscar y mostrar el alumno en la poscion  4 de la lista.
-lista_alumnos= [
+lista_alumnos=[
     {
-        "nombre":"alvaro",
-        "apellido":"flores",
-        "edad":18
-        
-    },{
-        "nombre":"sandro",
-        "apellido":"rodriguez",
-        "edad":17
-        
-
-
-    },{
         "nombre":"abel",
-        "apellido":"pariona",
-        "edad":19
+        "apellido":"castillo",
+        "edad":20,
+    },{
+        "nombre":"ruth",
+        "apellido":"morales",
+        "edad":18,
 
     },{
-        "nombre":"nayeli",
-        "apellido":"sanchez",
-        "edad":18
+        "nombre":"flor",
+        "apellido":"lucana ",
+        "edad":18,
 
     },{
-        "nombre":"antoni",
-        "apellido":"tincopa",
-        "edad":20
+        "nombre":"luz",
+        "apellido":"jimenez",
+        "edad":19,
+
+    },{
+        "nombre":"antony",
+        "apellido":"quispe",
+        "edad":25,
+        
     }
-    ]
-lista_alumnos.pop(3)
-print(lista_alumnos)
-lista_alumnos.append(0)
-print(lista_alumnos)
-lista_alumnos.index(2)
-print(lista_alumnos)
+]
+
+lista_alumnos.remove({
+        "nombre":"abel",
+        "apellido":"castillo",
+        "edad":20,
+        
+})
+indice=lista_alumnos.index({
+    
+        "nombre":"luz",
+        "apellido":"jimenez",
+        "edad":19,
+    })
+print(lista_alumnos[indice])
 
 
 #crear  una lista de 3 diccionarios  donde tendran datos de su mascotas [nombre,edad,sexo,raza]
@@ -51,5 +57,45 @@ print(lista_alumnos)
 #mostrar la lñsita con los 4 diccionarios
 #editar el 3 registro y cambiar la edad sin modificar la lista
 #mostrar la lista  original y luego la lista con  el tercer registro modificado
+
+dato_mascota=[
+     {"nombre":"OZUNA",
+     "edad":5,
+     "sexo":"macho",
+     "raza":"pitbull"
+     },{"nombre":"blanca",
+     "edad":6,
+     "sexo":"hembra",
+     "raza":"poodle"
+     },{"nombre":"negra",
+     "edad":4,
+     "sexo":"hembra",
+     "raza":"chiwawa"
+     },{"nombre":"espritu",
+     "edad":7,
+     "sexo":"hembra",
+     "raza":"shi tzu"
+     }
+     ]
+for diccionario in dato_mascota:
+    print(diccionario)
+print()
+copia_mascotas=dato_mascota.copy()
+copia_mascotas[2]["edad"]=7
+for copy in copia_mascotas:
+    print(copy)
    
+
+# yo como dueño de mi mascota 
+# deceo ver una lista de mis mascotas 
+#para tener un resumen de mi9s mascotas 
+
+
+# yo como dueño de mi mascota 
+# deceo actualizar la edad de mi mascota 
+#para tener una lista  de mi mascota 
+
+#yo como dueño de mis mascota
+#necesito acceso a los datos de mi mascota 
+# para monitorear amis mascostaS 
 
