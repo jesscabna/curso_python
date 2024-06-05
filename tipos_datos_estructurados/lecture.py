@@ -21,5 +21,38 @@ print(lista)
 print(copia_lista)
 
 
+# crar una lista de numeros enteros del siguiente texto 
+texto="1,4,8,9,6"
+convertir=texto.split(",")
+print(convertir)
 
+
+
+
+# otra manera  de realizar 
+texto="1,4,8,9,6"
+nueva_lista =[]
+for n in texto.split(","):
+    nueva_lista.append(int(n))
+    print(nueva_lista)
+
+# aplicando la tecnica vlc - valor bucle y condicion      
+texto="1,4,8,9,6"
+nueva_lista =[int (n) for n in texto.split(",") if int(n)
+              %2==0]
+print(nueva_lista)
+
+
+#diccionario por comptrencion 
+lista_amigos=["abel","anthoni","edith","ruth"]
+diccionario={}
+for _,v in  enumerate(lista_amigos):
+ diccionario[v]=len(v)
+ print(diccionario)
+ 
+ 
+ #aplicando el vlc
+ lista_amigos=["abel","anthoni","edith","ruth"]
+ diccionario={amigo:len(amigo) for amigo in lista_amigos}
+ print(diccionario)
 

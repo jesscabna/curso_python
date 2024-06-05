@@ -169,6 +169,19 @@ copia_autos[0]["PRECIO"]=100.000
 for copy in lista_autos:
     
     print(copy)
+
+
+
+
+# crear una lista de los primeros 20 numeros primos haciendo uso de conprecion
+
+numeros_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1) if num != i)]
+primeros_20_primos = [num for num in numeros_primos][:20]
+print(primeros_20_primos)
+
+
+
+
     
 
 
