@@ -65,3 +65,64 @@ print(saludo())
 dicc ()
 #retorna {"nombre":"jose","edad ": 45}  
  ```
+
+ ## parametros y argumentos
+ si una funcion  no disousiera de valopres  de entrada estariaq limitada  en su actuacion  es por ello ello que los  `parametros`  no permiten variar  los datos que comsume  una funcion  para obtener  disitintos  resultados 
+ **ejemplo** 
+ *crear una funcion que  un valor numerico y retorna su raiz cuadrada*
+ ```python
+ def sqrt(valor);
+ return valor**(1/2)
+ sqrt(4)
+ #NOTA: EN ESTE CASO EL VALOR 4 ES UN ARGUMENTO DE UNA FUNCION 
+ ```
+ CUANDO LLAMAMOS  a una funcion con `argumentos` los valores de estos argumentos se copian en los correspondientes `parametros ` dentro de la funcion 
+ ```python
+ def  ejm (a,b,c):
+  return a+b+c
+ ejm(4,5,6) 
+ ```
+ 
+ 
+ 
+ 
+ ### Argumen tos nominales  
+  en esta aproxi,acion  no son copiados  en un orden especificos  si nom que **se asingnan por nombre a cada paramtro** .  ello nos permite  evitar el problema  conocre o recordar  cua es el orden  de los parametros en la defenicion  de la funcion  . 
+  para utilizarlo , basta con realizar una asignacion  de cda argumento  en la propia llamada de la funcion 
+  **Ejemplo**
+  ```python
+  def build_cpu(familia,num_core,frecuencia):
+    print(f"""
+    el cpu es de la familia {familia},
+    con{num_core} cores y con una  frecuenmcia de {frecuemcia}
+    
+    
+     """)
+     # haciendo uso de argumentos nominales 
+     build_cpu(num_core=4,familia="intel" ,frecuencia=2.7)
+     # uso de argumentos pocicionales
+     build_cpu("intel" , 4,2.7)
+     
+```
+### Parametros por defectos
+  es posible especificar valores por defectos em los parametro de una funcion  en el caso de que no se proporcione  un valor al argumento  en la llamadqa de la funcion   el parametro correspondiente  tomara unm valor defenidom, por defecto
+  **ejemplo**
+  ```python
+  def alumno(nom,app,estado="aprobado"):
+    alumnos=("ruth","castillo")   
+    alumnos("antoni","cruzes","desaprobado")
+
+  ```
+  ## desempaquetado/ empaquetado de argumentos(tarea)
+
+  
+## funciones internas  de python(tarea )
+     
+    
+    
+
+
+
+
+
+
