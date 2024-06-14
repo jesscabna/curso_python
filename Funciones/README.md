@@ -86,7 +86,7 @@ dicc ()
  
  
  
- ### Argumen tos nominales  
+ ### Argumentos nominales  
   en esta aproxi,acion  no son copiados  en un orden especificos  si nom que **se asingnan por nombre a cada paramtro** .  ello nos permite  evitar el problema  conocre o recordar  cua es el orden  de los parametros en la defenicion  de la funcion  . 
   para utilizarlo , basta con realizar una asignacion  de cda argumento  en la propia llamada de la funcion 
   **Ejemplo**
@@ -115,8 +115,105 @@ dicc ()
   ```
   ## desempaquetado/ empaquetado de argumentos(tarea)
 
+  Python nos ofrece la posibilidad de empaquetar y desempaquetar argumentos cuando estamos invocando a una función, tanto para argumentos posicionales como para argumentos nominales.
+  ### Empaquetar/Desempaquetar argumentos posicionales
+  Si utilizamos el operador * delante del nombre de un parámetro posicional, estaremos indicando que los argumentos pasados a la función se empaqueten en una tupla.
+  **Ejemplo**
+  ```python
+  #Para superar esta «limitación» vamos a hacer uso del * para empaquetar los argumentos posicionales:
+  def _sum(*values):
+    print(f'{values=}')
+    result = 0
+    for value in values:  # values es una tupla
+        result += value
+    return result
+
+
+_sum(4, 3, 2, 1)
+#values=(4, 3, 2, 1)
+10
+
+#Existe la posibilidad de usar el asterisco * en la llamada a la función para desempaquetar los argumentos posicionales:
+values = (4, 3, 2, 1)
+
+_sum(values)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 4, in _sum
+TypeError: unsupported operand type(s) for +=: 'int' and 'tuple'
+
+# Desempaquetado: _sum(4, 3, 2, 1)
+_sum(*values)
+values=(4, 3, 2, 1)
+10
+```
+### Empaquetar/Desempaquetar argumentos nominales
+Si utilizamos el operador ** delante del nombre de un parámetro nominal, estaremos indicando que los argumentos pasados a la función se empaqueten en un diccionario.
+**Ejemplo**
+```python
+#queremos encontrar la persona con mayor calificación de un examen. Haremos uso del ** para empaquetar los argumentos nominales:
+def best_student(**marks):
+    print(f'{marks=}')
+    max_mark = -1
+    for student, mark in marks.items():  # marks es un diccionario
+        if mark > max_mark:
+            max_mark = mark
+            best_student = student
+    return best_student
+
+
+best_student(ana=8, antonio=6, inma=9, javier=7)
+
+#marks={'ana': 8, 'antonio': 6, 'inma': 9, 'javier': 7}
+#'inma'
+
+
+#Al igual que veíamos previamente, existe la posibilidad de usar doble asterisco ** en la llamada a la función para desempaquetar los argumentos nominales:
+marks = dict(ana=8, antonio=6, inma=9, javier=7)
+
+best_student(marks)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: best_student() takes 0 positional arguments but 1 was given
+
+# Desempaquetado: best_student(ana=8, antonio=6, inma=9, javier=7)
+best_student(**marks)
+marks={'ana': 8, 'antonio': 6, 'inma': 9, 'javier': 7}
+'inma'
+```
+
   
 ## funciones internas  de python(tarea )
+
+### Funciones list, type y tuple
+- List(). Con esta función se puede crear un listado y aportan un gran nivel de flexibilidad al trabajar con conjuntos de datos.
+- Type(). Se trata de una función básica de Python que se utiliza principalmente con objetivos de depuración de código.
+- Tuple(). Permiten crear una lista, pero con dos características diferentes (inmutabilidad, pues sus valores no pueden ser modificados, y rapidez, pues su uso acelera el proceso de cálculo).
+  
+
+### Funciones de texto
+- Print(). Una función básica de Python y que también podemos encontrar en la mayoría de lenguajes de programación, y cuyo fin es mostrar en pantalla un valor (texto o valores).
+- Len(). Función para contar el número de caracteres de una cadena de entrada y devolver su valor.
+- Replace(). Otra función de texto interesante de este lenguaje de programación que permite sustituir caracteres dentro de una cadena.
+- Str(). Conocido también como string, es una función que devuelve la representación de cadena de un número (presenta una secuencia inmutable de caracteres Unicode).
+- Ord(). Es una función que muestra el valor ASCII de una cadena de un carácter determinado.
+- Input(). Es una función que se utiliza para la entrada de datos por parte de un usuario en los programas desarrollados en Python.
+- Chr(). Devuelve la cadena correspondiente a un número entero en relación con el código Unicode (por ejemplo, chr(97)) devuelve la cadena “a”.
+  
+### Funciones numéricas
+- Sum(). Una función muy interesante que facilita la suma de valores de una lista o tupla en Python (siempre hablando de números como valores).
+- Min(). Con esta función se puede hallar el número más pequeño dentro de una lista, tupla o dos o más argumentos.
+- Max(). La función contraria a Min() que, en lugar del número más pequeño, devuelve el valor más grande o mayor.
+- Range(). Función de Python para generar una sucesión de números enteros de forma personalizada.
+- Round(). Cuando se trabaja con números matemáticos es importante disponer de una función capaz de realizar redondeos después de la coma, siendo esta la función de Python que se encarga de este proceso.
+- Hex (). Esta función que se incorporó a partir de la versión 3 de Python, convierte un número entero en una cadena hexadecimal con prefijo “0x”.
+- Abs(). Al utilizar esta función sobre un número se obtiene su valor absoluto.
+- Id(). Se trata de una función nativa que muestra un número entero que es único para cada objeto en memoria.
+- Bin(). Convierte un número entero en una cadena binaria incluyendo el prefijo “0b”.
+- float (). El tipo numérico float permite representar un número positivo o negativo con decimales, es decir, números reales. Si vienes de otros lenguajes, tal vez conozcas el tipo doble, lo que significa que tiene el doble de precisión que un float. En Python las cosas son algo distintas, y los float son en realidad double.
+- int (). Los enteros en Python o también conocidos como int, son un tipo de datos que permite representar números enteros, es decir, positivos y negativos no decimales. 
+- boleano(). Al igual que en otros lenguajes de programación, en Python existe el tipo bool o booleano. Es un tipo de dato que permite almacenar dos valores True o False.
+
      
     
     
