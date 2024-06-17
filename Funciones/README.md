@@ -218,9 +218,14 @@ marks={'ana': 8, 'antonio': 6, 'inma': 9, 'javier': 7}
 
 ## TIPOS DE FUNCIONES 
 ### FUNCIONES ANONIMAS (funciones lambda)
+una funcion que no tiene nombre
+`lamba:"hola"`
 ### funciones closure 
+na funcion que no tiene nombre
+` def saludo (nombre):`
 ### funciones callback
-
+ son funciones que por parametros reciben otra funcion
+`int (input("ingresde un numero"))`
 
 ### programacion funcional
      
