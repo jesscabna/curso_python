@@ -214,6 +214,15 @@ marks={'ana': 8, 'antonio': 6, 'inma': 9, 'javier': 7}
 - int (). Los enteros en Python o también conocidos como int, son un tipo de datos que permite representar números enteros, es decir, positivos y negativos no decimales. 
 - boleano(). Al igual que en otros lenguajes de programación, en Python existe el tipo bool o booleano. Es un tipo de dato que permite almacenar dos valores True o False.
 
+
+
+## TIPOS DE FUNCIONES 
+### FUNCIONES ANONIMAS (funciones lambda)
+### funciones closure 
+### funciones callback
+
+
+### programacion funcional
      
     
     
