@@ -52,4 +52,27 @@ def persona(nom,edad):
     }
 print(persona(nombre,edad))
 
+#ejemplo de lambda
+saludo=lambda n,a:f"hola, {n} , {a}"
+print(saludo("ruth","castilloo"))
 
+
+# crear un programa anonimo que  reciba como parametrro una lista de 5 numeros  y re3torne dos listas  una con numeros pares y otra con num eroas inpares 
+
+lista =[1,2,3,4,5] 
+pares=lambda l:[n for n in lista if n%2==0]
+inpares=lambda l:[n for n in lista if n%2!=0]
+print(pares(lista))
+print(inpares(lista)) 
+
+
+
+
+
+# ejemplo 
+def mwnsaje(m):
+    print(m)
+def pedir_nombre   () :
+    nombre=input("ingrese tu nombre->")
+    return nombre
+mensaje(pedir_nombre())

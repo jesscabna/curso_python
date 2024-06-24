@@ -218,8 +218,14 @@ marks={'ana': 8, 'antonio': 6, 'inma': 9, 'javier': 7}
 
 ## TIPOS DE FUNCIONES 
 ### FUNCIONES ANONIMAS (funciones lambda)
-una funcion que no tiene nombre
-`lamba:"hola"`
+una funcion que no tiene nombre , no hacen uso de la palabra reserbvada def 
+```python
+lamba:"hola"
+#normal
+
+def saludo():
+  return "hola"
+```
 ### funciones closure 
 na funcion que no tiene nombre
 ` def saludo (nombre):`
@@ -227,7 +233,25 @@ na funcion que no tiene nombre
  son funciones que por parametros reciben otra funcion
 `int (input("ingresde un numero"))`
 
-### programacion funcional
+### programacion funcional 
+la programacion fun cionaal no requiere que sepas como se desarrolla el proceso de la ejecusi0on
+***ejemplo**
+
+
+
+```python
+lista=[5,7,6,4,1,]
+def num_minimo(l):
+  minimo=l[0]
+  for n in l:
+    if n < minimo:
+    minimo=n
+    return minimo
+
+ ```   
+
+ #### averiguar sobre map() ,  filter() , reduce()
+
      
     
     
