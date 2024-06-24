@@ -69,7 +69,7 @@ print(inpares(lista))
 
 
 
-# ejemplo 
+# ejemplo  sobre clourse
 def mwnsaje(m):
     print(m)
 def pedir_nombre   () :

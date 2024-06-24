@@ -250,7 +250,7 @@ def num_minimo(l):
 
  ```   
 
- #### averiguar sobre map() ,  filter() , reduce()
+ #### averiguar sobre map() ,  filter() , reduce()   averiguar sobre essas tres funciones
 
      
     
