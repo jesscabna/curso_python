@@ -294,7 +294,7 @@ reduce() es una función incorporada de Python 2, que toma como argumento un con
 def add(a, b):
     return a + b
 
-print(reduce(add, [1, 2, 3, 4]))  # 10
+print(reduce(add, [1, 2, 3, 4]))  # 10...
 ```
 
 

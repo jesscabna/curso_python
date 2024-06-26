@@ -137,10 +137,11 @@ print(alumnos_actualizados)
 lista_filtrada=list(filter(lambda x:x ["edad"]<50,lista_alumnos))
 print(lista_filtrada)
 
- #FUNCION FILTER ()
+ #FUNCION FILTER .....()
  #devolver los numeros pares de una lista 
 lista=[1,3,4,6,5,7,8,9,7]
 nueva_lista=list(filter(lambda x :x%2==0,lista))
+                 
 print(nueva_lista)
 
 
