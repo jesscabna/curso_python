@@ -251,6 +251,52 @@ def num_minimo(l):
  ```   
 
  #### averiguar sobre map() ,  filter() , reduce()   averiguar sobre essas tres funciones
+ 
+ ## FUNCION MAP ()
+
+nos permite aplicar una función sobre los items de un objeto iterable (lista, tupla, etc...). La función retornará un objeto map que posteriormente podemos convertir a una lista o tupla. Es posible utilizar map junto con una función lambda.
+*ejemplo*
+```python 
+def doblar(numero):
+    return numero*2
+
+numeros = [2, 5, 10, 23, 50, 33]
+
+map(doblar, numeros)
+```
+
+## FUNCION FILTER ()
+
+Tal como su nombre indica filter significa filtrar, y es una de mis funciones favoritas, ya que a partir de una lista o iterador y una función condicional, es capaz de devolver una nueva colección con los elementos filtrados que cumplan la condición.
+*Ejemplo *
+
+
+```python 
+#Por ejemplo, supongamos que tenemos una lista varios números y queremos filtrarla, quedándonos únicamente con los múltiples de 5...
+
+def multiple(numero):    # Primero declaramos una función condicional
+    if numero % 5 == 0:  # Comprobamos si un numero es múltiple de cinco
+        return True      # Sólo devolvemos True si lo es
+
+numeros = [2, 5, 10, 23, 50, 33]
+
+filter(multiple, numeros)
+
+<filter at 0x257ac84abe0>
+```
+
+## FUNCION REDUCE ()
+reduce() es una función incorporada de Python 2, que toma como argumento un conjunto de valores (una lista, una tupla, o cualquier objeto iterable) y lo "reduce" a un único valor. Cómo se obtiene ese único valor a partir de la colección pasada como argumento dependerá de la función aplicada.
+*Ejemplo *
+```python 
+#Por ejemplo, el siguiente código reduce la lista [1, 2, 3, 4] al número 10 aplicando la función add(a, b), que retorna la suma de sus argumentos.
+
+def add(a, b):
+    return a + b
+
+print(reduce(add, [1, 2, 3, 4]))  # 10
+```
+
 
      
     
