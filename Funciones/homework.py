@@ -107,4 +107,4 @@ def objeto(e):
 
 
 lista=list(filter(objeto,lista_alumnos))
-print(otra_lista[1])
+print(otra_lista[1])  
