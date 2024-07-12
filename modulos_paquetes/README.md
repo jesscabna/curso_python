@@ -75,4 +75,4 @@ from matematica.aritmetica import sumar
 
 print(sumar(7, 5))
 ```
-Python incluye una inmensa cantidad de módulos y paquetes en su instalación (aún más grande es aquella desarrollada por la comunidad, de la que hablaremos más adelante), a los que se conoce como librería estándar. Ahora que sabemos cómo trabajar con ellos, sopesemos esta cuestión.
+Python incluye una inmensa cantidad de módulos y paquetes en su instalación (aún más grande es aquella desarrollada por la comunidad, de la que hablaremos más adelante), a los que se conoce como librería estándar. Ahora que sabemos cómo trabajar con ellos, sopesemos esta cuestión...
