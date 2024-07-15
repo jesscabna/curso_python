@@ -5,5 +5,4 @@ def f_cuenta_vocales(text:str):
     for n in text_minuscula:
         if n == "a":
             cantidad_vocales+=1
-    return cantidad_vocales
-      
+    return cantidad_vocales      
