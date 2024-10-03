@@ -26,7 +26,8 @@ jess.ver()
 # EJERCICIO 2
 # Crear una clase agencia
 # con sus atributos nombre y apellidos del pasajero dni numero de asiento fecha de viaje
-# sus metodos seran ingresar origen, ingresar destino, cancelar viaje, ver estado de pasaje
+# sus metodos seran ingresar origen, ingresar destino, cancelar viaje, ver estado de pasaje deoned
+# j
 
 class Agencia:
     def init(self,nombre,apellido,dni,numero_asiento,fecha_viaje):
