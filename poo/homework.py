@@ -18,10 +18,10 @@ class Banco:
     def ver(self):
         print("ve su estado de cuenta")
 
-edith=Banco("jess","cabna",60414454,2324-2342-3334,100)
-edith.deposita(200)
-edith.retirar(90)
-edith.ver()
+jess=Banco("jess","cabana",60414454,2324-2342-3334,100)
+jess.deposita(200)
+jess.retirar(90)
+jess.ver()
 
 # EJERCICIO 2
 # Crear una clase agencia
@@ -44,9 +44,9 @@ class Agencia:
         print("viaje cancelado")
     def estado_viaje(self):
         print("ver su estado de viaje: ")
-#ruth=Agencia("ruth","castillo",60414454,5,2/10/24)
-edith=Agencia()
-edith.estado_viaje()
-edith.origen("puquio")
-edith.destino("arequipa")
-edith.cancelar_viaje()
+#jess=Agencia("jess","cabna",60414454,5,2/10/24)
+jess=Agencia()
+jess.estado_viaje()
+jess.origen("puquio")
+jess.destino("arequipa")
+jess.cancelar_viaje()
